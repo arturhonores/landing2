@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Tailwind 2</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header
+    class="h-[85vh] bg-cover bg-no-repeat bg-center bg-[url('/images/mobile/image-hero.jpg')] md:bg-[url('/images/desktop/image-hero.jpg')]">
+    <div
+      class="menu-mobile oculto bg-black text-white absolute h-screen top-0 left-0 right-0 duration-300 z-10 md:hidden">
+      <ul class="space-y-5 font-light text-lg cursor-pointer h-full flex flex-col justify-center pb-20 pl-20 w-fit">
+        <li class="uppercase hover:text-pink-500">About</li>
+        <li class="uppercase hover:text-pink-500">Careers</li>
+        <li class="uppercase hover:text-pink-500">Events</li>
+        <li class="uppercase hover:text-pink-500">Products</li>
+        <li class="uppercase hover:text-pink-500">Support</li>
+      </ul>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 relative h-full w-full">
+      <nav class="flex justify-between items-center py-8">
+        <img src="./images/logo.svg" alt="">
+        <ul class="hidden md:flex font-alata space-x-8 text-white font-bold">
+          <li class="efecto-underline-nav cursor-pointer">
+            About</li>
+          <li class="efecto-underline-nav cursor-pointer">Careers</li>
+          <li class="efecto-underline-nav cursor-pointer">Events</li>
+          <li class="efecto-underline-nav cursor-pointer">Products</li>
+          <li class="efecto-underline-nav cursor-pointer">Support</li>
+        </ul>
+        <div class="menu-btn md:hidden relative z-20">
+          <div class="menu-btn__burger"></div>
+        </div>
+      </nav>
+      <div class="absolute text-white border-2 top-1/2 -translate-y-1/2 left-6 max-w-xs md:max-w-lg">
+        <h1 class="text-4xl font-light p-5 md:text-6xl lg:p-7">IMPRESSIVE EXPERIENCES THAT DELIVER</h1>
+      </div>
+      <div class="absolute bottom-0 flex justify-center w-full left-0">
+        <svg class="w-10 h-10 bottom-5 md:w-16 md:h-16 text-white animate-bounce" xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <main class="espacio">
+    <div class="flex flex-col relative">
+      <img class="md:hidden" src="./images/mobile/image-interactive.jpg" alt="">
+      <img class="hidden md:block max-w-3xl" src="./images/desktop/image-interactive.jpg" alt="">
+      <div
+        class="flex flex-col items-center space-y-5 pt-10 md:absolute md:pt-12 md:pb-12 md:bg-white md:bottom-0 md:right-0">
+        <h2 class="font-light text-4xl max-w-lg text-center md:text-5xl">THE LEADER IN INTERACTIVE VR</h2>
+        <p class="font-light max-w-md text-center">Founded in 2011, Loopstudios has been producing world-class virtual
+          reality
+          projects for
+          some of the best
+          companies around the globe. Our award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.</p>
+      </div>
+    </div>
+  </main>
+  <section class="espacio">
+    <div class="flex justify-center md:justify-between items-center">
+      <h2 class="font-light text-4xl md:text-5xl text-center mb-20">OUR CREATIONS</h2>
+      <button
+        class="font-alata hidden md:block max-w-[200px] py-2 tracking-[0.3em] border-solid border-2 border-black w-full font-bold hover:bg-black hover:text-white uppercase mb-20">see
+        all</button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="relative group overflow-hidden">
+        <img class="w-full md:hidden" src="./images/mobile/image-deep-earth.jpg" alt="">
+        <img class="efecto-imagen-card" src="./images/desktop/image-deep-earth.jpg" alt="">
+        <div class="efecto-degradado-card">
+        </div>
+        <p class="efecto-texto-card">
+          DEEP <br class="hidden md:block">EARTH</br></p>
+      </div>
+
+      <div class="relative group overflow-hidden">
+        <img class="w-full md:hidden" src="./images/mobile/image-night-arcade.jpg" alt="">
+        <img class="efecto-imagen-card" src="./images/desktop/image-night-arcade.jpg" alt="">
+        <div class="efecto-degradado-card">
+        </div>
+        <p class="efecto-texto-card">NIGHT <br class="hidden md:block">
+          ARCADE</p>
+      </div>
+
+      <div class="relative group overflow-hidden">
+        <img class="w-full md:hidden" src="./images/mobile/image-soccer-team.jpg" alt="">
+        <img class="efecto-imagen-card" src="./images/desktop/image-soccer-team.jpg" alt="">
+        <div class="efecto-degradado-card">
+        </div>
+        <p class="efecto-texto-card">SOCCER
+          <br class="hidden md:block">TEAM VR
+        </p>
+      </div>
+
+      <div class="relative group overflow-hidden">
+        <img class="w-full md:hidden" src="./images/mobile/image-grid.jpg" alt="">
+        <img class="efecto-imagen-card" src="./images/desktop/image-grid.jpg" alt="">
+        <div class="efecto-degradado-card">
+        </div>
+        <p class="efecto-texto-card">THE GRID
+        </p>
+      </div>
+
+      <div class="relative group overflow-hidden">
+        <img class="w-full md:hidden" src="./images/mobile/image-from-above.jpg" alt="">
+        <img class="efecto-imagen-card" src="./images/desktop/image-from-above.jpg" alt="">
+        <div class="efecto-degradado-card">
+        </div>
+        <p class="efecto-texto-card">FROM UP
+          <br class="hidden md:block">ABOVE VR
+        </p>
+      </div>
+
+      <div class="relative group overflow-hidden">
+        <img class="w-full md:hidden" src="./images/mobile/image-pocket-borealis.jpg" alt="">
+        <img class="efecto-imagen-card" src="./images/desktop/image-pocket-borealis.jpg" alt="">
+        <div class="efecto-degradado-card">
+        </div>
+        <p class="efecto-texto-card">POCKET
+          <br class="hidden md:block">BOREALIS
+        </p>
+      </div>
+
+      <div class="relative group overflow-hidden">
+        <img class="w-full md:hidden" src="./images/mobile/image-curiosity.jpg" alt="">
+        <img class="efecto-imagen-card" src="./images/desktop/image-curiosity.jpg" alt="">
+        <div class="efecto-degradado-card">
+        </div>
+        <p class="efecto-texto-card">THE
+          <br class="hidden md:block">CURIOSITY
+        </p>
+      </div>
+
+      <div class="relative group overflow-hidden">
+        <img class="w-full md:hidden" src="./images/mobile/image-fisheye.jpg" alt="">
+        <img class="efecto-imagen-card" src="./images/desktop/image-fisheye.jpg" alt="">
+        <div class="efecto-degradado-card">
+        </div>
+        <p class="efecto-texto-card">MAKE IT
+          <br class="hidden md:block">FISHEYE
+        </p>
+      </div>
+    </div>
+    <button
+      class="font-alata py-2 mt-10 tracking-[0.3em] border-solid border-2 border-black w-full font-bold hover:bg-black hover:text-white uppercase md:hidden">see
+      all</button>
+  </section>
+  <footer class="bg-black ">
+    <div
+      class="espacio text-white py-20 flex flex-col space-y-6 md:flex-row md:justify-between md:space-y-0 md:items-center">
+      <div class="flex flex-col items-center md:items-start">
+        <div class="h-8 w-44 mb-6">
+          <img class="w-full h-full" src="./images/logo.svg" alt="">
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 text-center">
+          <a class="md:efecto-underline-nav-footer" href="">About</a>
+          <a class="md:efecto-underline-nav-footer" href="">Careers</a>
+          <a class="md:efecto-underline-nav-footer" href="">Events</a>
+          <a class="md:efecto-underline-nav-footer" href="">Products</a>
+          <a class="md:efecto-underline-nav-footer" href="">Support</a>
+        </div>
+      </div>
+      <!-- icons and copyright -->
+      <div class="flex flex-col md:items-end">
+        <div class="flex justify-center items-center space-x-4 mb-6 md:h-8">
+          <a href=""><img class="h-6" src="./images/icon-facebook.svg" alt=""></a>
+          <a href=""><img class="h-6" src="./images/icon-twitter.svg" alt=""></a>
+          <a href=""><img class="h-6" src="./images/icon-pinterest.svg" alt=""></a>
+          <a href=""><img class="h-6" src="./images/icon-instagram.svg" alt=""></a>
+        </div>
+        <p class="text-center font-normal text-gray-400">© 2022 Loopstudios. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
