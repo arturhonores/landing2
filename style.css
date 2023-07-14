@@ -50,7 +50,8 @@
 /* Menu hamburguesa*/
 
 .menu-btn__burger {
-  position: relative;
+  position: fixed;
+  /* position: relative; */
   width: 28px;
   height: 3px;
   background: #fff;
@@ -93,5 +94,5 @@
 }
 
 .menu-mobile.oculto {
-  top: -100%;
+  top: -110%;
 }
