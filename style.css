@@ -50,8 +50,7 @@
 /* Menu hamburguesa*/
 
 .menu-btn__burger {
-  position: fixed;
-  /* position: relative; */
+  position: relative;
   width: 28px;
   height: 3px;
   background: #fff;
